@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.App {
+  font-family: sans-serif;
+  background-color: red;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.CommandBar {
+  height: 40px;
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+}
+
+.SequenceView {
+  background-color: green;
+  flex-grow: 1;
+}
+
+.SequenceRow {
+  height: 36px;
+  background-color: brown;
+  display: flex;
+  align-items: stretch;
+  background-color: rgb(75, 108, 255);
+}
+
+.StepBar {
+  flex-grow: 1;
+  display: flex;
+}
+
+.StepMeasure {
+  flex-grow: 1;
+  display: flex;
+}
+
+.StepMeasure:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.StepMeasure:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.StepBeat {
+  transition: background-color 0.2s;
+  flex-grow: 1;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 1px;
+}
+
+.StepBeat:nth-child(even) {
+  background-color: rgba(211, 79, 79, 0.1);
+}
+
+.StepBeat:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.StepBeat.StepBeat-playing {
+  transition: background-color 0s;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.SampleCell {
+  padding: 0 8px;
+  align-self: center;
+  min-width: 125px;
+}
+
+.SequenceButton {
+}
